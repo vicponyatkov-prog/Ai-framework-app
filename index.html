@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Офлайн-шпаргалка по AI-протоколам, шаблонам запросов и псевдокомандам. С быстрым копированием и избранным.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI Framework">
+  <link rel="icon" type="image/png" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <title>AI Framework — мини-приложение</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-icon" aria-hidden="true">⌘</span>
+        <div><span class="brand-name">AI FRAMEWORK</span><span class="brand-caption">PERSONAL CHEATSHEET</span></div>
+      </div>
+      <div class="topbar-right"><span class="version">PRO · 1.0</span><span class="online-status" id="connection-status" title="Состояние соединения">● Офлайн-режим доступен после установки</span></div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="eyebrow"><span class="dot"></span> БЫСТРЫЙ СПРАВОЧНИК</div>
+        <h1 id="hero-title">Твои AI-инструменты.<br><span>Всегда под рукой.</span></h1>
+        <p>Протоколы мышления, шаблоны запросов и команды — с понятными пояснениями и копированием в одно касание.</p>
+        <div class="hero-stats" aria-label="Возможности">
+          <span><strong id="total-count">7</strong> карточек</span><span class="stat-divider"></span>
+          <span><strong>1</strong> касание для копии</span><span class="stat-divider"></span>
+          <span><strong>0 ₽</strong> стоимость</span>
+        </div>
+      </section>
+
+      <section class="notice" aria-label="Важное уточнение">
+        <span class="notice-icon" aria-hidden="true">i</span>
+        <p><strong>Важно:</strong> теги <code>&lt;thought&gt;</code>, атрибуты <code>priority="high"</code> и флаги вроде <code>[NO_PROSE=TRUE]</code> <strong>не являются настоящими системными командами ChatGPT</strong>. Они показаны как примеры условного синтаксиса. В карточках ниже есть реальные текстовые инструкции, которые можно использовать в запросах.</p>
+      </section>
+
+      <section class="library" aria-labelledby="library-title">
+        <div class="section-head"><div><div class="eyebrow eyebrow-muted">БИБЛИОТЕКА</div><h2 id="library-title">Каталог протоколов</h2></div><span class="result-count" id="result-count"></span></div>
+        <label class="search" for="search-input">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+          <input id="search-input" type="search" placeholder="Найти протокол, команду или слово..." autocomplete="off">
+          <span class="search-key">⌕</span>
+        </label>
+        <div class="tabs" role="group" aria-label="Фильтр каталога">
+          <button class="tab active" type="button" data-filter="all" aria-pressed="true">Все</button>
+          <button class="tab" type="button" data-filter="protocol">Протоколы</button>
+          <button class="tab" type="button" data-filter="meta">Мета-команды</button>
+          <button class="tab" type="button" data-filter="attribute">Атрибуты</button>
+          <button class="tab" type="button" data-filter="prompt">Готовые запросы</button>
+          <button class="tab" type="button" data-filter="favorites">★ Избранное</button>
+        </div>
+        <div class="cards" id="cards" aria-live="polite"></div>
+        <div class="empty" id="empty" hidden><div class="empty-symbol">⌕</div><h3>Ничего не найдено</h3><p>Измени поисковый запрос или выбери другую категорию.</p><button type="button" id="reset">Сбросить фильтры</button></div>
+      </section>
+      <footer><div class="footer-mark">⌘ AI FRAMEWORK</div><p>Работает без аккаунтов и платных сервисов. Избранное сохраняется на этом устройстве.</p></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js" defer></script>
+</body>
+</html>
