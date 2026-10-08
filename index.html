@@ -8,10 +8,14 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="AI Framework">
-  <link rel="icon" type="image/png" href="./icons/icon-192.png">
-  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="icon" type="image/png" href="./icon-192.png">
+  <link rel="apple-touch-icon" href="./icon-192.png">
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="./styles.css">
+  <style>
+:root{color-scheme:dark;--bg:#0b1020;--panel:#131c30;--panel-hover:#17223a;--line:#263451;--text:#f0f5ff;--muted:#9eacc7;--cyan:#54d7f4;--violet:#a48eff;--green:#71e3b6;--amber:#ffce87;--danger:#ff9da7;--radius:18px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-tap-highlight-color:transparent}body{margin:0;min-height:100vh;background:radial-gradient(ellipse 60% 26% at 90% -8%,#20274b 0,transparent 100%),var(--bg);font:15px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:var(--text)}button,input{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}.app-shell{max-width:1060px;margin:auto;padding:0 24px}.topbar{min-height:92px;display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #202b44}.brand{display:flex;align-items:center;gap:13px}.brand-icon{height:40px;width:40px;display:grid;place-items:center;background:linear-gradient(140deg,#56d7fb,#8878ee);color:#0b1020;border-radius:11px;font-size:27px;font-weight:800}.brand-name{display:block;font-size:13px;letter-spacing:2px;font-weight:850}.brand-caption{display:block;color:#8190ab;letter-spacing:2.3px;font-size:9px;font-weight:700}.topbar-right{display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:end}.version{font-size:11px;color:#a2acbf;border:1px solid #34415b;border-radius:6px;padding:4px 8px;font-weight:750;white-space:nowrap}.online-status{font-size:11px;color:var(--muted)}.online-status.online{color:#9cb4ce}.online-status.offline{color:var(--green)}.hero{position:relative;isolation:isolate;overflow:hidden;padding:58px 52px 40px;background:linear-gradient(118deg,#1c2340,#111d31 63%,#0d1d30);border:1px solid #354260;border-radius:25px;margin:30px 0 20px}.hero:after{content:"";position:absolute;right:-62px;top:-110px;width:350px;height:350px;border-radius:70px;border:1px solid #6b66a537;transform:rotate(34deg);z-index:-1;box-shadow:0 0 0 48px #6066b90a,0 0 0 99px #4ed6f806}.hero-glow{position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 90% 0%,#4a42ac50,transparent 46%)}.eyebrow{font-size:10px;font-weight:850;letter-spacing:2.3px;color:var(--cyan);display:flex;align-items:center;gap:9px}.dot{width:6px;height:6px;background:var(--cyan);border-radius:100%;box-shadow:0 0 12px var(--cyan)}h1{font-size:clamp(29px,4.8vw,49px);line-height:1.18;letter-spacing:-1.6px;margin:20px 0 17px;font-weight:830}h1 span{color:var(--cyan)}.hero p{color:#b0c0d9;font-size:15px;max-width:630px;margin:0}.hero-stats{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:29px;font-size:12px;color:#9faec8}.hero-stats strong{color:#eff6ff;font-size:18px;margin-right:4px}.stat-divider{height:18px;width:1px;background:#344364}.notice{display:flex;gap:14px;background:#221e31;border:1px solid #4f3e51;border-radius:13px;padding:17px 19px;margin-bottom:43px}.notice-icon{display:grid;place-items:center;flex:0 0 24px;width:24px;height:24px;background:#f8ca8050;color:#ffda93;font-weight:850;border-radius:50%;font-family:Georgia,serif}.notice p{font-size:12px;margin:0;color:#e1d2d8;line-height:1.75}.notice strong{color:#ffe2b0}.notice code{font-size:11px;color:#ffda93;word-break:break-word}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:18px;gap:15px}.eyebrow-muted{color:#91a3c2}.section-head h2{font-size:25px;line-height:1.2;margin:7px 0 0;letter-spacing:-.45px}.result-count{color:#92a1bb;font-size:12px;white-space:nowrap}.search{background:#121b2d;border:1px solid #2c3b55;border-radius:12px;min-height:53px;display:flex;align-items:center;gap:12px;padding:0 17px;color:#8c9ebb;transition:border .2s}.search:focus-within{border-color:#61d7f4}.search input{background:none;color:#f2f7ff;border:none;outline:none;width:100%;min-width:0;font-size:14px}.search input::placeholder{color:#7789a5}.search-key{font-size:22px;color:#62738d}.tabs{display:flex;gap:9px;overflow-x:auto;padding:16px 1px 21px;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tab{flex:0 0 auto;padding:8px 13px;border:1px solid #2d3a54;background:transparent;color:#a5b1cb;border-radius:9px;font-size:12px;font-weight:700}.tab.active{color:#072033;border-color:var(--cyan);background:var(--cyan)}.tab:hover:not(.active){background:#202b43}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:linear-gradient(170deg,#172138 0%,#121b2e 100%);border:1px solid #2b3b59;border-radius:var(--radius);min-width:0;overflow:hidden;transition:border-color .18s,transform .18s}.card:hover{border-color:#4b6484;transform:translateY(-2px)}.card-top{padding:23px 22px 0}.card-meta{display:flex;justify-content:space-between;gap:12px;align-items:start}.tag{display:inline-flex;align-items:center;gap:7px;font-weight:850;letter-spacing:1.3px;font-size:10px;border-radius:6px;padding:6px 9px;background:#193c53;color:#8de4ff}.tag.meta{background:#4c2b39;color:#ffa4b8}.tag.attribute{background:#352b52;color:#c0aeff}.tag.prompt{background:#203c36;color:#9befcf}.favorite{border:1px solid #34415c;background:#162239;color:#8797b6;border-radius:9px;width:35px;height:35px;display:grid;place-items:center;font-size:20px;line-height:1}.favorite:hover,.favorite.active{color:#fbd47a;background:#383327;border-color:#83703f}.card h3{font-size:21px;margin:14px 0 7px;letter-spacing:-.5px;line-height:1.25}.card-desc{font-size:13px;line-height:1.65;color:#adbad1;margin:0 0 17px;min-height:42px}.status{font-size:10px;font-weight:800;letter-spacing:.6px;color:#edc78d;display:flex;align-items:center;gap:6px;margin:0 0 15px}.status:before{content:"";width:6px;height:6px;background:#f3b86a;border-radius:100%}.status.working{color:#82e8be}.status.working:before{background:#82e8be}.code-section{border-top:1px solid #2d3b55;background:#10192c;padding:15px 22px 19px}.code-label{color:#93a6c4;letter-spacing:1px;font-size:10px;font-weight:850;margin-bottom:10px}.code{background:#0a1324;border:1px solid #273651;color:#b7eaff;border-radius:10px;padding:12px;margin:0 0 11px;line-height:1.55;font:12px/1.65 ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;white-space:pre-wrap;overflow-wrap:anywhere;max-height:144px;overflow:auto}.copy{border:1px solid #465473;border-radius:8px;background:#222e49;color:#ecf4ff;font-weight:750;font-size:12px;width:100%;padding:10px;display:flex;align-items:center;justify-content:center;gap:8px}.copy.primary{color:#082438;background:var(--cyan);border-color:var(--cyan)}.copy:hover{filter:brightness(1.09)}.copy svg{flex-shrink:0}.secondary{display:flex;gap:8px;align-items:center;justify-content:center;background:none;border:none;border-top:1px solid #263853;color:#9bafd0;width:100%;padding:13px;font-size:12px;font-weight:750}.secondary:hover{color:#e7f4ff}.chevron{display:inline-block;transition:transform .2s}.secondary[aria-expanded="true"] .chevron{transform:rotate(180deg)}.expanded{padding:15px 22px 21px;background:#16213a;border-top:1px solid #283958}.expanded .code{max-height:none;color:#b6f3d8}.expanded-note{font-size:11px;color:#a1b1cb;margin:0 0 10px}.empty{text-align:center;border:1px dashed #3a4b6a;border-radius:18px;margin:8px 0 20px;padding:46px 20px}.empty-symbol{font-size:40px;color:#8fa5c8}.empty h3{margin:4px 0}.empty p{color:var(--muted)}.empty button{background:var(--cyan);color:#0d1b30;border:0;border-radius:8px;font-weight:800;padding:10px 15px}footer{margin:56px 0 27px;border-top:1px solid #27334e;display:flex;justify-content:space-between;gap:20px;align-items:center;padding-top:23px}.footer-mark{font-weight:850;letter-spacing:1.6px;font-size:11px;color:#8ea6c6}footer p{font-size:11px;color:#7586a5;margin:0;text-align:right}.toast{position:fixed;z-index:20;bottom:max(24px,env(safe-area-inset-bottom));left:50%;transform:translate(-50%,30px);opacity:0;pointer-events:none;border:1px solid #5b866f;background:#1d463d;color:#dcffeb;padding:12px 19px;border-radius:10px;box-shadow:0 8px 30px #0009;font-size:13px;font-weight:750;transition:opacity .25s,transform .25s;white-space:nowrap;max-width:calc(100% - 40px)}.toast.visible{opacity:1;transform:translate(-50%,0)}[hidden]{display:none!important}@media(max-width:750px){.cards{grid-template-columns:1fr}.app-shell{padding:0 16px}.topbar{min-height:74px}.topbar-right .online-status{display:none}.hero{padding:33px 24px 30px;border-radius:19px;margin:20px 0 16px}.hero h1{letter-spacing:-.7px}.hero p{font-size:13px}.hero-stats{gap:11px}.hero-stats strong{font-size:15px}.notice{margin-bottom:33px}.section-head h2{font-size:22px}.card:hover{transform:none}footer{display:block}footer p{text-align:left;margin-top:7px}}@media(max-width:390px){.hero-stats{gap:7px;font-size:10px}.stat-divider{height:14px}.card-top{padding:18px 17px 0}.code-section,.expanded{padding-left:17px;padding-right:17px}.notice{padding:14px}.topbar-right .version{font-size:10px}.brand-name{font-size:11px}}
+
+</style>
   <title>AI Framework — мини-приложение</title>
 </head>
 <body>
@@ -64,6 +68,168 @@
     </main>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="./app.js" defer></script>
+  <script>
+'use strict';
+// Важно: приведённые теги и "мета-команды" — условные примеры, а не API ChatGPT.
+const items = [
+  {
+    id: 'react', type: 'protocol', tag: 'АРХИТЕКТУРНЫЙ ПРОТОКОЛ', title: 'ReAct',
+    description: 'Чередование действия и проверки результата. Полезно для отладки, исследования и многошаговых задач.',
+    status: 'Концепция, не встроенная команда',
+    original: '<thought> Анализ задачи... </thought>\n<call name="tool"> {args} </call>',
+    prompt: 'Решай задачу итерациями: выбери ближайшее проверяемое действие, выполни его с доступными инструментами, оцени наблюдаемый результат и только затем переходи к следующему действию. Показывай краткий план, выполненные шаги и проверяемые результаты. Если инструмента нет — прямо скажи об этом; не имитируй вызов.'
+  },
+  {
+    id: 'tot', type: 'protocol', tag: 'АРХИТЕКТУРНЫЙ ПРОТОКОЛ', title: 'Tree of Thoughts (ToT)',
+    description: 'Сравнение нескольких направлений решения перед выбором наиболее подходящего.',
+    status: 'Концепция, не встроенная команда',
+    original: '<thought_branch id="1" confidence="0.8"> ... </thought_branch>',
+    prompt: 'Предложи три принципиально разных подхода к моей задаче. Для каждого оцени преимущества, риски, ресурсы и вероятность практической реализации без выдуманных точных процентов. Сравни подходы по этим критериям и порекомендуй один. Затем предложи первый проверяемый шаг.'
+  },
+  {
+    id: 'meta', type: 'meta', tag: 'УСЛОВНЫЕ МЕТА-КОМАНДЫ', title: 'Мета-команды',
+    description: 'Флаги из исходной шпаргалки. Их можно использовать как условные пометки для себя, но ChatGPT не распознаёт их как системные переключатели.',
+    status: 'Не настоящие системные команды',
+    original: '[NO_PROSE=TRUE]\n[FORCE_STEPBYSTEP=TRUE]\n[HALT_ON_ERROR=TRUE]',
+    prompt: 'Отвечай без длинного вступления. Дай понятную пошаговую инструкцию и кратко обоснуй ключевые решения. Если действие через API или инструмент завершится ошибкой, остановись, укажи точную ошибку и предложи безопасный способ её исправить, не заявляя об успешном выполнении.'
+  },
+  {
+    id: 'attributes', type: 'attribute', tag: 'УСЛОВНЫЕ АТРИБУТЫ', title: 'Атрибуты управления',
+    description: 'Запись параметров выполнения. Как текст она не меняет приоритет инструкций, режим модели или доступность инструментов.',
+    status: 'Не управляет системой ChatGPT',
+    original: 'priority="high" | execution="sync"\nmode="strict" | fallback="tool_name"',
+    prompt: 'Приоритет: получить работающий результат. Режим: строго следуй заданным требованиям. Выполнение: не переходи к следующему этапу, пока не проверен предыдущий. Если инструмент недоступен, сообщи ограничение и предложи доступную альтернативу. Не делай вид, что изменились системные настройки.'
+  },
+  {
+    id: 'audit', type: 'prompt', tag: 'ГОТОВЫЙ ЗАПРОС', title: 'Аудит без домыслов',
+    description: 'Для проверки сайтов, идей и файлов с разделением фактов, гипотез и неизвестных.',
+    status: 'Рабочая текстовая инструкция',
+    original: 'Цель → источники → факты → пробелы → вывод',
+    prompt: 'Проведи аудит предоставленного объекта. Раздели вывод на: 1) проверенные факты с источниками, 2) обоснованные гипотезы, 3) неизвестные данные, 4) основные риски, 5) действия для проверки. Не выдумывай просмотренные материалы, ссылки, измерения или результаты. Если данных не хватает, обозначь ограничения.'
+  },
+  {
+    id: 'mvp', type: 'prompt', tag: 'ГОТОВЫЙ ЗАПРОС', title: 'Быстрый MVP',
+    description: 'Помогает перейти от идеи к минимальному работающему результату без бесконечной подготовки.',
+    status: 'Рабочая текстовая инструкция',
+    original: 'Идея → минимальная версия → тест → решение',
+    prompt: 'Помоги сделать минимально работающую версию моей идеи. Сначала выдели одну главную пользу для пользователя, затем обязательные функции и то, что можно отложить. Предложи бесплатный стек, план сборки, критерии готовности и один реальный тест. Оптимизируй усилия, но не жертвуй необходимым качеством.'
+  },
+  {
+    id: 'error', type: 'prompt', tag: 'ГОТОВЫЙ ЗАПРОС', title: 'Диагностика ошибки',
+    description: 'Для ошибок кода, API и окружения: без бесконечных повторов и бессмысленной теории.',
+    status: 'Рабочая текстовая инструкция',
+    original: 'Ошибка → причина → 1 тест → исправление',
+    prompt: 'Вот ошибка и контекст выполнения. Выдели наиболее вероятную причину, предложи один короткий диагностический тест и ожидаемые результаты. Не повторяй неудачный шаг без нового основания. После диагностики предложи минимальное исправление и проверку того, что оно сработало.'
+  }
+];
+
+const $ = (id) => document.getElementById(id);
+const cards = $('cards');
+const search = $('search-input');
+const storageKey = 'ai-framework-favorites-v1';
+let favorites = new Set();
+try { favorites = new Set(JSON.parse(localStorage.getItem(storageKey) || '[]')); } catch (_) { /* блокировка storage не мешает работе */ }
+let selected = 'all';
+let toastTimer;
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, (c) => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
+}
+const copyIcon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg>';
+function makeCard(item) {
+  const active = favorites.has(item.id);
+  const isPrompt = item.type === 'prompt';
+  const statusClass = isPrompt ? 'working' : '';
+  const lowerLabel = isPrompt ? 'КОРОТКАЯ СХЕМА' : 'ИСХОДНЫЙ ПРИМЕР · ПСЕВДОСИНТАКСИС';
+  return `<article class="card" data-id="${escapeHtml(item.id)}">
+    <div class="card-top"><div class="card-meta"><span class="tag ${escapeHtml(item.type)}">${escapeHtml(item.tag)}</span><button class="favorite ${active ? 'active' : ''}" type="button" data-action="favorite" data-id="${escapeHtml(item.id)}" aria-label="${active ? 'Убрать из избранного' : 'Добавить в избранное'}" aria-pressed="${active}">★</button></div>
+    <h3>${escapeHtml(item.title)}</h3><p class="card-desc">${escapeHtml(item.description)}</p><div class="status ${statusClass}">${escapeHtml(item.status)}</div></div>
+    <div class="code-section"><div class="code-label">${lowerLabel}</div><pre class="code">${escapeHtml(item.original)}</pre>
+    <button class="copy" data-action="copy" data-id="${escapeHtml(item.id)}" data-which="original" type="button">${copyIcon} Копировать пример</button></div>
+    <button class="secondary" type="button" data-action="expand" data-id="${escapeHtml(item.id)}" aria-expanded="false">Практический запрос <span class="chevron">⌄</span></button>
+    <div class="expanded" hidden><div class="code-label">МОЖНО ВСТАВИТЬ В CHATGPT</div><p class="expanded-note">Обычная текстовая инструкция, а не команда системного уровня.</p><pre class="code">${escapeHtml(item.prompt)}</pre>
+    <button class="copy primary" type="button" data-action="copy" data-id="${escapeHtml(item.id)}" data-which="prompt">${copyIcon} Скопировать рабочий запрос</button></div>
+  </article>`;
+}
+function render() {
+  const q = search.value.toLocaleLowerCase('ru-RU').trim();
+  const filtered = items.filter(item => {
+    const matchFilter = selected === 'all' || (selected === 'favorites' ? favorites.has(item.id) : item.type === selected);
+    const searchable = [item.title, item.tag, item.description, item.original, item.prompt].join(' ').toLocaleLowerCase('ru-RU');
+    return matchFilter && searchable.includes(q);
+  });
+  cards.innerHTML = filtered.map(makeCard).join('');
+  $('result-count').textContent = `${filtered.length} из ${items.length}`;
+  $('total-count').textContent = String(items.length);
+  $('empty').hidden = filtered.length !== 0;
+}
+function showToast(message) {
+  const el = $('toast'); el.textContent = message; el.classList.add('visible');
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove('visible'), 2200);
+}
+async function copyText(value) {
+  try {
+    if (navigator.clipboard?.writeText && window.isSecureContext) {
+      await navigator.clipboard.writeText(value);
+    } else {
+      // Запасной способ для некоторых мобильных браузеров и локального HTML.
+      const input = document.createElement('textarea');
+      input.value = value; input.setAttribute('readonly', ''); input.style.position = 'fixed'; input.style.opacity = '0';
+      document.body.appendChild(input); input.select(); input.setSelectionRange(0, value.length);
+      const done = document.execCommand('copy'); input.remove();
+      if (!done) throw new Error('copy not supported');
+    }
+    showToast('✓ Скопировано в буфер обмена');
+  } catch (_) {
+    showToast('Не удалось скопировать автоматически');
+    window.prompt('Выдели и скопируй этот текст:', value);
+  }
+}
+
+document.querySelector('.tabs').addEventListener('click', (event) => {
+  const tab = event.target.closest('[data-filter]');
+  if (!tab) return;
+  selected = tab.dataset.filter;
+  document.querySelectorAll('.tab').forEach(el => { const on = el === tab; el.classList.toggle('active', on); el.setAttribute('aria-pressed', String(on)); });
+  render();
+});
+cards.addEventListener('click', (event) => {
+  const btn = event.target.closest('button[data-action]');
+  if (!btn) return;
+  const item = items.find(x => x.id === btn.dataset.id);
+  if (!item) return;
+  if (btn.dataset.action === 'copy') { void copyText(item[btn.dataset.which]); return; }
+  if (btn.dataset.action === 'favorite') {
+    favorites.has(item.id) ? favorites.delete(item.id) : favorites.add(item.id);
+    try { localStorage.setItem(storageKey, JSON.stringify([...favorites])); } catch (_) { /* память может быть отключена */ }
+    render(); showToast(favorites.has(item.id) ? '★ Добавлено в избранное' : 'Удалено из избранного');
+    return;
+  }
+  if (btn.dataset.action === 'expand') {
+    const expanded = btn.nextElementSibling;
+    expanded.hidden = !expanded.hidden;
+    btn.setAttribute('aria-expanded', String(!expanded.hidden));
+  }
+});
+search.addEventListener('input', render);
+$('reset').addEventListener('click', () => {
+  search.value = ''; selected = 'all';
+  document.querySelectorAll('.tab').forEach(el => { const on = el.dataset.filter === 'all'; el.classList.toggle('active', on); el.setAttribute('aria-pressed', String(on)); });
+  render();
+});
+function updateConnection() {
+  const el = $('connection-status');
+  const online = navigator.onLine;
+  el.textContent = online ? '● Онлайн' : '● Офлайн';
+  el.classList.toggle('online', online); el.classList.toggle('offline', !online);
+}
+window.addEventListener('online', updateConnection);
+window.addEventListener('offline', updateConnection);
+updateConnection(); render();
+if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));
+}
+
+</script>
 </body>
 </html>
